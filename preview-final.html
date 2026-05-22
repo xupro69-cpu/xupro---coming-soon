@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Xuprocoin - Coming Soon | Prediction Gaming & Crypto Investment Platform</title>
+
+<meta name="title" content="Xuprocoin - Coming Soon">
+<meta name="description" content="Xuprocoin is the next generation prediction gaming and investment platform supporting fiat and cryptocurrencies with games like Aviator, Plinko, Dice, Chicken Run and Color Prediction.">
+<meta name="keywords" content="xuprocoin, prediction gaming, crypto gaming, aviator, plinko, dice game, color prediction, blockchain gaming">
+<meta name="author" content="Xuprocoin">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Xuprocoin - Coming Soon">
+<meta property="og:description" content="Next generation prediction gaming and investment platform with crypto & fiat support.">
+<meta property="og:image" content="logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Xuprocoin - Coming Soon">
+<meta name="twitter:description" content="Prediction gaming and crypto investment ecosystem launching soon.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#040816;
+    font-family:'Inter',sans-serif;
+    color:#fff;
+}
+
+/* ========================= */
+/* BACKGROUND */
+/* ========================= */
+
+body{
+    position:relative;
+    background:
+    radial-gradient(circle at top left, rgba(0,255,200,.15), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255,0,200,.12), transparent 30%),
+    radial-gradient(circle at center, rgba(0,120,255,.12), transparent 40%),
+    linear-gradient(135deg,#02040d,#040816,#030614);
+}
+
+.bg-grid{
+    position:absolute;
+    inset:0;
+
+    background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+
+    background-size:60px 60px;
+
+    transform:
+    perspective(1000px)
+    rotateX(65deg)
+    scale(2);
+
+    transform-origin:center top;
+
+    animation:gridMove 14s linear infinite;
+
+    opacity:.18;
+}
+
+@keyframes gridMove{
+    from{
+        transform:
+        perspective(1000px)
+        rotateX(65deg)
+        translateY(0)
+        scale(2);
+    }
+
+    to{
+        transform:
+        perspective(1000px)
+        rotateX(65deg)
+        translateY(60px)
+        scale(2);
+    }
+}
+
+/* ========================= */
+/* GLOW ORBS */
+/* ========================= */
+
+.orb{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:.35;
+    animation:floatOrb 6s ease-in-out infinite alternate;
+}
+
+.orb1{
+    width:350px;
+    height:350px;
+    background:#00ffd5;
+    top:-100px;
+    left:-100px;
+}
+
+.orb2{
+    width:300px;
+    height:300px;
+    background:#ff00d4;
+    bottom:-120px;
+    right:-60px;
+}
+
+.orb3{
+    width:240px;
+    height:240px;
+    background:#0077ff;
+    top:25%;
+    right:12%;
+}
+
+@keyframes floatOrb{
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.2);
+    }
+}
+
+/* ========================= */
+/* PARTICLES */
+/* ========================= */
+
+.particle{
+    position:absolute;
+    border-radius:50%;
+    background:white;
+    opacity:.8;
+    animation:particleFloat linear infinite;
+}
+
+@keyframes particleFloat{
+
+    from{
+        transform:
+        translateY(100vh)
+        scale(0);
+
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    90%{
+        opacity:1;
+    }
+
+    to{
+        transform:
+        translateY(-10vh)
+        scale(1);
+
+        opacity:0;
+    }
+}
+
+/* ========================= */
+/* MAIN CONTAINER */
+/* ========================= */
+
+.wrapper{
+    position:relative;
+    z-index:2;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:20px;
+}
+
+.card{
+
+    width:100%;
+    max-width:900px;
+
+    padding:70px 50px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 0 60px rgba(0,255,200,.1),
+    0 0 120px rgba(0,100,255,.08);
+
+    text-align:center;
+
+    position:relative;
+    overflow:hidden;
+
+    transition:.3s ease;
+}
+
+/* ========================= */
+/* SHIMMER */
+/* ========================= */
+
+.card::before{
+
+    content:'';
+
+    position:absolute;
+
+    width:180%;
+    height:120px;
+
+    background:
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.12),
+    transparent
+    );
+
+    top:-20px;
+    left:-60%;
+
+    transform:rotate(-20deg);
+
+    animation:shimmer 5s linear infinite;
+}
+
+@keyframes shimmer{
+
+    from{
+        left:-80%;
+    }
+
+    to{
+        left:120%;
+    }
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.logo-wrapper{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:25px;
+
+    animation:logoFloat 4s ease-in-out infinite;
+}
+
+.logo-img{
+
+    width:360px;
+    max-width:90%;
+    object-fit:contain;
+
+    filter:
+    drop-shadow(0 0 20px rgba(0,255,255,.35))
+    drop-shadow(0 0 45px rgba(255,0,255,.2));
+
+    transition:.4s ease;
+}
+
+.logo-img:hover{
+    transform:scale(1.03);
+}
+
+@keyframes logoFloat{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* ========================= */
+/* TAG */
+/* ========================= */
+
+.tag{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:rgba(0,255,200,.08);
+
+    border:1px solid rgba(0,255,200,.25);
+
+    color:#00ffd0;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:28px;
+
+    animation:blink 2s infinite;
+}
+
+@keyframes blink{
+
+    50%{
+        opacity:.6;
+    }
+}
+
+/* ========================= */
+/* HEADING */
+/* ========================= */
+
+h1{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:74px;
+    line-height:1;
+
+    margin-bottom:24px;
+
+    font-weight:800;
+
+    background:
+    linear-gradient(
+    90deg,
+    #ffffff,
+    #00ffd0,
+    #00a2ff,
+    #ffffff
+    );
+
+    background-size:200% auto;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation:textGradient 5s linear infinite;
+}
+
+@keyframes textGradient{
+
+    to{
+        background-position:200% center;
+    }
+}
+
+/* ========================= */
+/* DESCRIPTION */
+/* ========================= */
+
+.desc{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:rgba(255,255,255,.72);
+
+    font-size:18px;
+
+    line-height:1.9;
+}
+
+/* ========================= */
+/* GAME LIST */
+/* ========================= */
+
+.games{
+
+    margin-top:40px;
+
+    display:flex;
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+}
+
+.game{
+
+    padding:14px 22px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s ease;
+
+    cursor:pointer;
+
+    font-weight:500;
+}
+
+.game:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.05);
+
+    background:rgba(0,255,200,.08);
+
+    border-color:#00ffd0;
+
+    box-shadow:
+    0 0 25px rgba(0,255,200,.18);
+}
+
+/* ========================= */
+/* COUNTDOWN */
+/* ========================= */
+
+.countdown{
+
+    margin-top:45px;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+    gap:18px;
+}
+
+.time-box{
+
+    width:110px;
+
+    padding:22px 10px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.time-box h2{
+
+    font-size:38px;
+
+    margin-bottom:8px;
+
+    color:#00ffd0;
+
+    font-family:'Orbitron',sans-serif;
+}
+
+.time-box p{
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:rgba(255,255,255,.55);
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer{
+
+    margin-top:45px;
+
+    font-size:13px;
+
+    color:rgba(255,255,255,.45);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    .card{
+        padding:55px 25px;
+    }
+
+    h1{
+        font-size:50px;
+    }
+
+    .desc{
+        font-size:16px;
+    }
+
+    .time-box{
+        width:90px;
+    }
+
+    .time-box h2{
+        font-size:28px;
+    }
+
+    .logo-img{
+        width:260px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="bg-grid"></div>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<div class="wrapper">
+
+    <div class="card">
+
+        <!-- LOGO -->
+        <div class="logo-wrapper">
+            <svg width="900" height="320" viewBox="0 0 900 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+			<defs>
+
+				<!-- MAIN GRADIENT -->
+				<linearGradient id="xGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+					<stop offset="0%" stop-color="#00E5FF">
+						<animate attributeName="stop-color"
+							values="#00E5FF;#7A5CFF;#FF2D95;#00E5FF"
+							dur="6s"
+							repeatCount="indefinite"/>
+					</stop>
+
+					<stop offset="100%" stop-color="#FF2D95">
+						<animate attributeName="stop-color"
+							values="#FF2D95;#00E5FF;#7A5CFF;#FF2D95"
+							dur="6s"
+							repeatCount="indefinite"/>
+					</stop>
+				</linearGradient>
+
+				<!-- TEXT GRADIENT -->
+				<linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" stop-color="#ffffff"/>
+					<stop offset="50%" stop-color="#00E5FF"/>
+					<stop offset="100%" stop-color="#FF2D95"/>
+				</linearGradient>
+
+				<!-- GLOW -->
+				<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+					<feGaussianBlur stdDeviation="6" result="blur"/>
+					<feMerge>
+						<feMergeNode in="blur"/>
+						<feMergeNode in="SourceGraphic"/>
+					</feMerge>
+				</filter>
+
+				<!-- SHINE EFFECT -->
+				<linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" stop-color="rgba(255,255,255,0)"/>
+					<stop offset="50%" stop-color="rgba(255,255,255,0.8)"/>
+					<stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+				</linearGradient>
+
+			</defs>
+
+			<style>
+
+				.logo-group{
+					animation:float 4s ease-in-out infinite;
+					transform-origin:center;
+				}
+
+				@keyframes float{
+					0%{
+						transform:translateY(0px);
+					}
+					50%{
+						transform:translateY(-8px);
+					}
+					100%{
+						transform:translateY(0px);
+					}
+				}
+
+				.pulse{
+					animation:pulseGlow 3s infinite alternate;
+				}
+
+				@keyframes pulseGlow{
+					from{
+						opacity:.7;
+					}
+					to{
+						opacity:1;
+					}
+				}
+
+				.shine-bar{
+					animation:shineMove 4s linear infinite;
+				}
+
+				@keyframes shineMove{
+					from{
+						transform:translateX(-500px);
+					}
+					to{
+						transform:translateX(1000px);
+					}
+				}
+
+			</style>
+
+			<!-- BACKGROUND GLOW -->
+			<circle cx="450" cy="160" r="140" fill="url(#xGradient)" opacity="0.12">
+				<animate attributeName="r"
+					values="130;145;130"
+					dur="5s"
+					repeatCount="indefinite"/>
+			</circle>
+
+			<!-- LOGO -->
+			<g class="logo-group">
+
+				<!-- X SYMBOL -->
+				<g filter="url(#glow)" class="pulse">
+
+					<!-- LEFT -->
+					<path d="M320 55 L390 55 L490 160 L420 160 Z"
+						  fill="url(#xGradient)"/>
+
+					<path d="M320 265 L390 265 L490 160 L420 160 Z"
+						  fill="url(#xGradient)"/>
+
+					<!-- RIGHT -->
+					<path d="M580 55 L510 55 L410 160 L480 160 Z"
+						  fill="url(#xGradient)"/>
+
+					<path d="M580 265 L510 265 L410 160 L480 160 Z"
+						  fill="url(#xGradient)"/>
+
+					<!-- CENTER ENERGY -->
+					<path d="M360 160 L540 160"
+						  stroke="white"
+						  stroke-width="8"
+						  stroke-linecap="round">
+
+						<animate attributeName="stroke-opacity"
+							values="0.2;1;0.2"
+							dur="2s"
+							repeatCount="indefinite"/>
+					</path>
+
+				</g>
+
+				<!-- BRAND NAME -->
+				<text x="450"
+					  y="310"
+					  text-anchor="middle"
+					  font-family="Orbitron, sans-serif"
+					  font-size="72"
+					  font-weight="800"
+					  fill="url(#textGradient)"
+					  filter="url(#glow)"
+					  letter-spacing="4">
+
+					XUPROCOIN
+
+				</text>
+
+				<!-- SHINE -->
+				<rect x="-400"
+					  y="0"
+					  width="180"
+					  height="320"
+					  fill="white"
+					  opacity="0.08"
+					  transform="rotate(18)"
+					  class="shine-bar"/>
+
+			</g>
+
+			</svg>
+        </div>
+
+        <!-- TAG -->
+        <div class="tag">
+            Next Generation Prediction Gaming Platform
+        </div>
+
+        <!-- HEADING -->
+        <h1>
+            COMING SOON
+        </h1>
+
+        <!-- DESCRIPTION -->
+        <p class="desc">
+            Experience the future of prediction gaming and smart investments
+            with seamless crypto & fiat support. Dive into a premium ecosystem
+            featuring Aviator, Plinko, Dice, Chicken Run and advanced color prediction games.
+        </p>
+
+        <!-- GAMES -->
+        <div class="games">
+
+            <div class="game">✈ Aviator</div>
+
+            <div class="game">⚪ Plinko</div>
+
+            <div class="game">🎲 Dice</div>
+
+            <div class="game">🐔 Chicken Run</div>
+
+            <div class="game">🎨 Color Prediction</div>
+
+        </div>
+
+        <!-- COUNTDOWN -->
+        <div class="countdown">
+
+            <div class="time-box">
+                <h2 id="days">00</h2>
+                <p>Days</p>
+            </div>
+
+            <div class="time-box">
+                <h2 id="hours">00</h2>
+                <p>Hours</p>
+            </div>
+
+            <div class="time-box">
+                <h2 id="minutes">00</h2>
+                <p>Minutes</p>
+            </div>
+
+            <div class="time-box">
+                <h2 id="seconds">00</h2>
+                <p>Seconds</p>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            © 2026 XUPROCOIN.COM • ALL RIGHTS RESERVED
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+/* ========================= */
+/* PARTICLES */
+/* ========================= */
+
+for(let i = 0; i < 80; i++){
+
+    const particle = document.createElement('div');
+
+    particle.classList.add('particle');
+
+    particle.style.width = Math.random() * 4 + 'px';
+    particle.style.height = particle.style.width;
+
+    particle.style.left = Math.random() * 100 + '%';
+
+    particle.style.animationDuration =
+    (Math.random() * 10 + 8) + 's';
+
+    particle.style.animationDelay =
+    (Math.random() * 5) + 's';
+
+    particle.style.opacity = Math.random();
+
+    document.body.appendChild(particle);
+}
+
+/* ========================= */
+/* COUNTDOWN */
+/* ========================= */
+
+const targetDate = new Date();
+
+targetDate.setDate(targetDate.getDate() + 30);
+
+function updateCountdown(){
+
+    const now = new Date().getTime();
+
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24))
+    / (1000 * 60 * 60)
+    );
+
+    const minutes = Math.floor(
+    (distance % (1000 * 60 * 60))
+    / (1000 * 60)
+    );
+
+    const seconds = Math.floor(
+    (distance % (1000 * 60))
+    / 1000
+    );
+
+    document.getElementById('days').innerHTML = days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
+/* ========================= */
+/* PARALLAX */
+/* ========================= */
+
+document.addEventListener('mousemove',(e)=>{
+
+    const x =
+    (window.innerWidth / 2 - e.pageX) / 45;
+
+    const y =
+    (window.innerHeight / 2 - e.pageY) / 45;
+
+    document.querySelector('.card').style.transform =
+    `rotateY(${x}deg) rotateX(${-y}deg)`;
+});
+
+</script>
+
+</body>
+</html>
